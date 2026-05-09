@@ -1,0 +1,23 @@
+{
+  "name": "nexus-intel",
+  "version": "1.0.0",
+  "description": "Ultra-modern full-stack OSINT platform with futuristic cyberpunk UI",
+  "private": true,
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  }
+}
